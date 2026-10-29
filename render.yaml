@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: ltx-video-agent
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python server.py
+    envVars:
+      - key: LTX_API_KEY
+        sync: false
