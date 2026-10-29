@@ -106,6 +106,6 @@ async def check_video_status(job_id: str) -> dict:
 
 
 if __name__ == "__main__":
-port = int(os.environ.get(“PORT”, “8000"))
+    port = int(os.environ.get("PORT", "8000"))
 mcp.settings.port = port
 mcp.run(transport=“streamable-http”)
